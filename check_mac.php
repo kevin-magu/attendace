@@ -1,9 +1,14 @@
 <?php
+// Enable error reporting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Database connection details
 $host = "localhost";
 $username = "root";
 $password = "root";
-$database = "attendance";
+$database = "attendace";
 
 // Create a connection
 $conn = new mysqli($host, $username, $password, $database);
@@ -12,6 +17,10 @@ $conn = new mysqli($host, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+// MAC address exists, execute the Python script
+$command = "python check_connection.py";
+$output = shell_exec($command);
 
 // Get the MAC address from the form
 $macAddress = $_POST['mac'];
