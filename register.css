@@ -9,3 +9,50 @@ body{
     align-items: center;
     min-height: 90vh;
 }
+.register-card{
+    height: 300px;
+    width: 300px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(27, 141, 185);
+    font-weight: bold;
+    border-radius: 5px;
+}     
+.register-card .title{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.input-fields form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}  
+form{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+form input{
+    height: 25px;
+    margin-bottom: 5px;
+
+}
+form input:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+button{
+    margin-top: 15px;
+    height: auto;
+    padding: 3px;
+    width: 20%;
+}
+.button{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
