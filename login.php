@@ -25,3 +25,17 @@ session_start();
     </div>
 </body>
 </html>
+
+<?php 
+if(isset($_SESSION['already_marked'])){
+    echo $_SESSION['already_marked'];
+}elseif(isset($_SESSION['marked_success'])){
+    echo $_SESSION['marked_success'];
+}elseif(isset($_SESSION['not_connected'])){
+    echo $_SESSION['not_connected'];
+}elseif(isset($_SESSION['use_original_mac'])){
+    echo $_SESSION['use_original_mac'];
+}elseif(isset($_SESSION['not_registered'])){
+    echo $_SESSION['not_registered'];
+}
+?>
