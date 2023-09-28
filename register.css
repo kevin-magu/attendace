@@ -7,12 +7,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 90vh;
 }
 .register-card{
-    height: 300px;
-    width: 300px;
-    padding: 7px;
+    height: 400px;
+    width: 320px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +38,10 @@ form{
 form input{
     height: 25px;
     margin-bottom: 5px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 form input:focus{
     outline: none;
@@ -55,4 +59,7 @@ button{
     display: flex;
 justify-content: center;
 align-items: center;
+}
+.error{
+    color: rgb(24, 134, 24);
 }

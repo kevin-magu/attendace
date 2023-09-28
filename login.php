@@ -11,6 +11,8 @@
         <div class="title">KUCSA Attendance</div>
         <form action="check_mac.php" method="post">
             <div class="input-fields">
+                <label for="mac">Reg No</label>
+                <input id="mac" type="text" name="regno" placeholder="Enter your Reg no">
                 <label for="mac">MAC Address</label>
                 <input id="mac" type="text" name="mac" placeholder="Enter your MAC address">
             </div>
